@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watch",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,5 +43,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@cfaester/enzyme-adapter-react-18": "^0.7.0",
+    "babel-jest": "^29.5.0",
+    "enzyme": "^3.11.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1"
   }
 }

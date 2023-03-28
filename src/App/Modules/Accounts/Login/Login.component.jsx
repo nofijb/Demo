@@ -36,6 +36,7 @@ export default function Login() {
             flexDirection: "column",
             alignItems: "center",
           }}
+          className="login-form"
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
             <LockOutlinedIcon />
@@ -54,7 +55,7 @@ export default function Login() {
               required
               fullWidth
               id="email"
-              label="Email Address"
+              label="Email"
               name="email"
               autoComplete="email"
               autoFocus
