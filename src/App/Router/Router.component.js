@@ -39,7 +39,7 @@ const routes = [
     title: "Dashboard",
     component: Dashboard,
   }),
-  // Admin Page Routes ( Staff Page not given to end-user yet )
+ 
   new Route({
     path: "/draggable",
     title: "Draggable",
