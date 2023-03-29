@@ -1,7 +1,6 @@
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "@cfaester/enzyme-adapter-react-18";
-import MyComponent from "../Modules/Draggable";
 import Card from "../Common/UIComponents/Card";
 Enzyme.configure({ adapter: new Adapter() });
 const CARD_DATA = [
@@ -35,13 +34,21 @@ const CARD_DATA = [
   },
 ];
 
-describe("MyComponent", () => {
-  it("renders without crashing", () => {
-    shallow(<MyComponent data={CARD_DATA} />);
+describe("Common Card", () => {
+  it("should render the Card component", () => {
+    const wrapper = shallow(<Card data={CARD_DATA[0]} />);
+    expect(wrapper.exists()).toBeTruthy();
   });
 
-  it("renders the correct number of cards", () => {
-    const wrapper = shallow(<MyComponent data={CARD_DATA} />);
-    expect(wrapper.find(Card)).toHaveLength(CARD_DATA.length);
+  it("should render the correct title", () => {
+    const wrapper = shallow(<Card data={CARD_DATA[0]} />);
+    expect(wrapper.find(".card-title").text()).toEqual(CARD_DATA[0].title);
+  });
+
+  it("should render the correct population", () => {
+    const wrapper = shallow(<Card data={CARD_DATA[0]} />);
+    expect(wrapper.find(".card-population").text()).toEqual(
+      CARD_DATA[0].population
+    );
   });
 });
