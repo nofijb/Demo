@@ -19,10 +19,10 @@ const Card = ({ data }) => {
   };
   return (
     <>
-      <Typography component="p" variant="h5">
+      <Typography component="p" variant="h5" className="card-title">
         {data.title}
       </Typography>
-      <Typography component="p" variant="h6">
+      <Typography component="p" variant="h6" className="card-population">
         {data.population}
       </Typography>
       <div>

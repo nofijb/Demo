@@ -54,6 +54,7 @@ const Login = () => {
             onSubmit={handleSubmit}
             noValidate
             sx={{ mt: 1 }}
+            className="login-form"
           >
             <TextField
               margin="normal"
