@@ -6,7 +6,8 @@ import Card from "../../Common/UIComponents/Card";
 import { CARD_DATA } from "./constants";
 import Overview from "./components/Overview";
 import Draggable from "react-draggable";
-function Dashboard() {
+
+const Dashboard = () => {
   return (
     <>
       {CARD_DATA.map((items) => {
@@ -50,5 +51,6 @@ function Dashboard() {
       </Draggable>
     </>
   );
-}
+};
+
 export default Dashboard;

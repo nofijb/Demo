@@ -67,7 +67,7 @@ const Drawer = styled(MuiDrawer, {
 
 const mdTheme = createTheme();
 
-export default function Navbar({ children }) {
+const Navbar = ({ children }) => {
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
     setOpen(!open);
@@ -182,4 +182,5 @@ export default function Navbar({ children }) {
       </Box>
     </ThemeProvider>
   );
-}
+};
+export default Navbar;

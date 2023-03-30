@@ -1,7 +1,7 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
 import ReactEcharts from "echarts-for-react";
-export default function Card({ data }) {
+const Card = ({ data }) => {
   const option = {
     xAxis: {
       type: "category",
@@ -33,4 +33,6 @@ export default function Card({ data }) {
       </div>
     </>
   );
-}
+};
+
+export default Card;

@@ -1,6 +1,7 @@
 import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "@cfaester/enzyme-adapter-react-18";
+import MyComponent from "../Modules/Draggable";
 import Card from "../Common/UIComponents/Card";
 Enzyme.configure({ adapter: new Adapter() });
 const CARD_DATA = [
@@ -33,6 +34,7 @@ const CARD_DATA = [
     graphType: "line",
   },
 ];
+
 
 describe("Common Card", () => {
   it("should render the Card component", () => {
