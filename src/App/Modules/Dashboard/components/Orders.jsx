@@ -53,10 +53,10 @@ const rows = [
   ),
 ];
 
-export default function Orders() {
+const Orders = () => {
   return (
     <>
-      <>Recent Orders</>
+      Recent Orders
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -81,4 +81,5 @@ export default function Orders() {
       </Table>
     </>
   );
-}
+};
+export default Orders;

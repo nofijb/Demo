@@ -1,7 +1,7 @@
 import React from "react";
 
-function NonLogged({ children }) {
-  return <>{children}</>;
-}
+const NonLogged = ({ children }) => {
+  return <div>{children}</div>;
+};
 
 export default NonLogged;

@@ -31,15 +31,19 @@ const routes = [
     path: "/",
     title: "Login",
     component: Accounts.Login,
-    authRequired: true,
+    authRequired: false,
   }),
-
+  new Route({
+    path: "/sign-up",
+    title: "SignUp",
+    component: Accounts.SignUp,
+    authRequired: false,
+  }),
   new Route({
     path: "/dashboard",
     title: "Dashboard",
     component: Dashboard,
   }),
- 
   new Route({
     path: "/draggable",
     title: "Draggable",

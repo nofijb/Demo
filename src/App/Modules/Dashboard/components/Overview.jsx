@@ -1,6 +1,6 @@
 import React from "react";
 import ReactEcharts from "echarts-for-react";
-function Overview() {
+const Overview = () => {
   let base = +new Date(1988, 9, 3);
   let oneDay = 24 * 3600 * 1000;
   let data = [[base, Math.random() * 300]];
@@ -59,6 +59,6 @@ function Overview() {
     ],
   };
   return <ReactEcharts option={option} style={{ height: "500px" }} />;
-}
+};
 
 export default Overview;
